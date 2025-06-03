@@ -3,20 +3,20 @@ using namespace std;
 
 class baseClass {
     public:
-    virtual void perkenalan() {
+    virtual void perkenalan() final{
         cout << "Hallo saya Function dari base class";
     }
 };
 
 class derivedClass : public baseClass {
     public:
-    void perkenalan(){
+    void perkenalan1(){
         cout << "Hallo saya Function dari derived class";
     }
 };
 int main() {
     derivedClass a;
-    a.perkenalan();
+    a.perkenalan1();
 
     return 0;
 }
